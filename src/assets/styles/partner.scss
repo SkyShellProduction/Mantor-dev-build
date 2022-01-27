@@ -1,0 +1,200 @@
+.centre {
+    padding: 46px 0 60px;
+    &__cards {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1022px;
+        width: 100%;
+    }
+    &__left {
+        max-width: 568px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__descr {
+        margin-top: 49px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__right {
+        max-width: 247px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        margin-top: 22px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__flex{
+        max-width: 920px;
+        .certificate__card{
+            max-width: 255px;
+            width: 100%;
+        }
+    }
+}
+
+.certificate {
+    position: relative;
+    padding: 46px 0 70px;
+    &__title {
+        margin-bottom: 53px;
+        position: relative;
+        z-index: 5;
+    }
+    &__cards {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 31px;
+        max-width: 840px;
+        width: 100%;
+    }
+    &__card {
+        display: flex;
+        max-width: 365px;
+    }
+    &__num {
+        font-size: 76px;
+        line-height: 100%;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        color: #ffffff;
+        margin-right: 17px;
+    }
+    &__descr{
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    &__abs{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        top: 157px;
+    }
+}
+
+.magazine {
+    padding: 50px 0 85px;
+    &__title {
+       color: #000;
+        margin-bottom: 30px;
+        max-width: 920px;
+    }
+    &__cards {
+        margin-top: 47px;
+        display: flex;
+        gap: 33px;
+        justify-content: space-between;
+    }
+    &__image {
+        height: 107px;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__card {
+        max-width: 257px;
+    }
+}
+.magazine .some__pillar, .centre .some__pillar {
+    background: rgba(31, 51, 65, 0.4);
+}
+.partner-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #000000;
+    &__link {
+        display: block;
+        text-align: center;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 24px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        color: #010007;
+        border-bottom: 6px solid transparent;
+        &.active{
+            border-bottom-color: #000;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .certificate {
+        &__descr{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__num{
+            font-size: 60px;
+        }
+        &__cards{
+            max-width: 720px;
+        }
+    }
+    .magazine__card{
+        max-width: 180px;
+    }
+    .centre__descr{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .centre__right img{
+        width: auto;
+    }
+}
+@media (max-width: 720px) {
+    .magazine__cards{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(130px, 155px));
+        justify-content: center;
+    }
+    .centre__cards{
+        flex-direction: column;
+    }
+    .centre__right{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(130px, 155px));
+    }
+    .certificate__cards{
+        flex-direction: column;
+    }
+    .partner-tabs__link{
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 456px) {
+    .partner-tabs__link{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .magazine__image img, .centre__item img{
+        width: 80%;
+    }
+    .magazine__image-spec{
+        width: auto !important;
+    }
+    
+}

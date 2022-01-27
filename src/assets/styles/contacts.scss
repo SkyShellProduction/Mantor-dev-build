@@ -1,0 +1,35 @@
+.info {
+    position: relative;
+    padding: 40px 0 116px;
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__block{
+        max-width: 920px;
+        width: 100%;
+    }
+    &__descr{
+        color: #FFFFFF;
+    }
+    &__flex{
+        margin-top: 87px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__right{
+        max-width: 256px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 720px) {
+    .info__flex{
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
+    .info__right{
+        display: block;
+    }
+}

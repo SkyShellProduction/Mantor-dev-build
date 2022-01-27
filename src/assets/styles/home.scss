@@ -1,0 +1,285 @@
+.experience {
+    padding: 42px 0 69px;
+    &__title {
+        color: #000;
+        margin-bottom: 30px;
+    }
+    .some__pillar {
+        background: rgba(31, 51, 65, 0.4);
+    }
+    &__grid {
+        padding-top: 42px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        overflow-x: auto;
+        padding-bottom: 50px;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__img {
+        height: 114px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__descr {
+        margin-top: 30px;
+    }
+}
+
+.mantor {
+    padding: 57px 0 115.76px;
+    &__title {
+        margin-bottom: 46.24px;
+    }
+    &__block {
+        max-width: 920px;
+    }
+    &__descr {
+            color: #fff;
+        &:first-child{
+            margin-bottom: 22px;
+        }
+    }
+}
+
+.mission {
+    padding: 46px 0 158px;
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    &__block {
+        position: relative;
+        z-index: 5;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__descr{
+        margin-bottom: 22px;
+        color: #fff;
+        font-weight: normal;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+   
+}
+
+
+.techno {
+    background: radial-gradient(
+        53.88% 97% at 50% 48.5%,
+        #2e4151 0%,
+        #010007 100%
+    );
+    padding: 48px 0 54px;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 31px;
+        padding: 61px 0 62px;
+    }
+    &__descr {
+        color: #fff;
+    }
+    &__box {
+        .techno__descr:last-child {
+            margin-top: 22px;
+        }
+    }
+    &__name {
+        font-size: 21px;
+        line-height: 36px;
+        font-family: "Roboto";
+        color: #fff;
+        position: relative;
+        z-index: 5;
+        margin-top: 13px;
+    }
+    &__rect {
+        position: absolute;
+        top: 0;
+        height: 432px;
+        left: 30px;
+        right: 30px;
+        background: rgba(196, 196, 196, 0.15);
+    }
+    &__sphere {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 7.65px;
+        column-gap: 11.13px;
+        &-item {
+            opacity: 0.5;
+            background: #fff;
+            width: 8.29px;
+            height: 8.31px;
+            border-radius: 50%;
+        }
+    }
+    &__romb {
+        position: absolute;
+        right: 8px;
+        bottom: 106px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-item {
+            width: 12px;
+            height: 10.38px;
+            background: #fff;
+            clip-path: polygon(
+                25% 0%,
+                75% 0%,
+                100% 50%,
+                75% 100%,
+                25% 100%,
+                0% 50%
+            );
+        }
+    }
+    &__parallel {
+        position: absolute;
+        width: 95.65px;
+        height: 190px;
+        right: 0;
+        bottom: 0;
+        background: rgba(196, 196, 196, 0.15);
+       clip-path: polygon(50% 1%, 100% 0, 100% 100%, 50% 100%, 26% 50%);
+    }
+    &__triangle{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgba(196, 196, 196, 0.16);
+        width: 143px;
+        height: 72px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    &__trian{
+        display: flex;
+        gap: 15.12px;
+        position: absolute;
+        right: 91px;
+        bottom: 33px;
+        &-item{
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            background: #fff;
+            width: 20.41px;
+            height: 12px;
+        }
+
+    }
+    &__card {
+        position: relative;
+        height: 500px;
+        img{
+            width: 100%;
+        }
+        &:nth-child(2) .techno__name {
+            margin-top: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        &:nth-child(2) .techno__rect {
+            height: 269px;
+            max-width: 257px;
+            left: 0;
+        }
+        img {
+            position: relative;
+            z-index: 5;
+        }
+        &:nth-child(1) img{
+            margin-top: 10px;
+        }
+        &:nth-child(2) img{
+            margin-top: 40px;
+        }
+        &:nth-child(3) img{
+            margin-top: 39px;
+        }
+        &:nth-child(1) .techno__sphere {
+            left: 0;
+            top: 105px;
+        }
+        &:nth-child(2) .techno__sphere {
+            right: 0;
+            bottom: 93px;
+        }
+        &:nth-child(3) .techno__sphere {
+            grid-template-columns: repeat(8, 1fr);
+            right: 0;
+            top: -20px;
+        }
+        &:nth-child(3) .techno__triangle {
+           transform: rotate(180deg);
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .techno__name{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .techno__card{
+        height: 350px;
+        &:nth-child(2) .techno__rect {
+            height: 160px;
+        }
+        &:nth-child(2) img{
+            margin-top: 20px;
+        }
+    }
+    .techno__rect{
+        height: 280px;
+    }
+    .techno__parallel{
+        height: 131px;
+        width: 78px;
+    }
+}
+
+@media(max-width: 728px) {
+    .techno__cards{
+        grid-template-columns: repeat(1, minmax(280px, 350px));
+        justify-content: center;
+    }
+    .techno__card {
+       height: 500px;
+        margin-bottom: 50px;
+        &:nth-child(2) .techno__name{
+            position: static;
+            margin-top: 12px;
+        }
+        &:nth-child(2) img{
+            margin-top: 0;
+        }
+        &:nth-child(2) .techno__rect {
+            height: 257px;
+        }
+    }
+    .techno__rect{
+        height: 432px;
+    }
+}
